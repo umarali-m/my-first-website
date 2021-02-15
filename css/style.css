@@ -1,0 +1,152 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --body-color: #f4f9f9;
+  --image-font-color: #5b5b5b;
+  --card-color: #f6f6f6;
+  --card-font-color: #0f1123;
+  --card-readMore-color: #4d375d;
+
+  /* FONTS */
+  --serif-font: 'Benne', serif;
+  --sans-font: 'Nunito', sans-serif;
+  --image-font: 5vw;
+  --image-font2: 3vw;
+  --image-font3: 2vw;
+  --card-font: 1rem;
+  --small-font: .75rem;
+  --normal-font: 1rem;
+  --large-font: 1.5rem;
+
+}
+
+/* BODY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: var(--sans-font);
+  min-height: 100vh;
+}
+
+.img-box {
+  position: relative;
+  width: 100%;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.img-box .container {
+  position: absolute;
+  padding-left: 5%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-box h1 {
+  font-size: var(--image-font);
+  color: var(--image-font-color);
+  font-family: var(--serif-font);
+}
+
+.img-box h2 {
+  font-size: var(--image-font2);
+  color: var(--image-font-color);
+  font-family: var(--serif-font);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container .card {
+  margin: 20px;
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 28px 28px 50px rgba(0, 0, 0, 0.16), -23px -23px 45px #fff;
+}
+
+.container .card:hover  {
+  bottom: 5px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3), -23px -23px 45px #fff;
+}
+
+.container .card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.container .card .font {
+  margin-top: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: var(--card-font);
+  color: var(--card-font-color);
+}
+
+.container .card .font a {
+  text-decoration: none;
+  color: var(--card-readMore-color);
+  font-size: var(--small-font);
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.img-box .address-container {
+  position: absolute;
+  top: 4%;
+  left: 6%;
+  height: 30vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.img-box .address-container h2 {
+  padding-bottom: 10px;
+  font-size: var(--image-font2);
+  color: var(--image-font-color);
+}
+
+.img-box .address-container p {
+  color: var(--image-font-color);
+  font-size: var(--image-font3);
+}
+
+.img-box span {
+  font-weight: bold;
+  font-family: var(--serif-font);
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
